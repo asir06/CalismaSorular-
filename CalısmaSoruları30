@@ -1,0 +1,13 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru30 {
+
+	public static void main(String[] args) {
+		// Klavyeden girlen bir kelimenin kaç harf olduğunu gösteren programı yazınız.
+		System.out.println("Cümleyi Giriniz");
+		Scanner cumle=new Scanner(System.in);
+		String girilencumle=cumle.nextLine();
+		System.out.println("Harf Sayısı="+girilencumle.length());
+	}
+
+}
