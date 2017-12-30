@@ -1,0 +1,28 @@
+package CalısmaSoruları;
+import java.util.Scanner;
+public class Soru28 {
+	public static void main(String[] args) {
+		//Tersinden ve düzünden okunuşu aynı olan yazılara palindrom denir. 
+		//Klavyeden girilen sayının palindrom olup olmadığını söyleyen programı yazınız.
+		String kelime=" "; 
+		int sayac=0;
+		Scanner girilen=new Scanner(System.in);
+		System.out.println("Bir Kelime Giriniz ==> ");
+		kelime=girilen.nextLine();
+		for(int i=0;i<=(kelime.length()/2);i++)
+		{
+		if(kelime.charAt(i)==kelime.charAt((kelime.length()-(i+1))))
+		{
+		sayac++;
+		} 
+		}
+		if(sayac-1==(kelime.length()/2))
+		{
+		System.out.println("Girdiğiniz Kelima Palindrom Kelimedir..");
+		}
+		if(sayac-1!=(kelime.length()/2))
+		{
+		System.out.println("Girdiğiniz Kelime Palindrom Kelime Değildir..");
+		}
+		}
+	}
