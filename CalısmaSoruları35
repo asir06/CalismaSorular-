@@ -1,0 +1,20 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru35 {
+
+	public static void main(String[] args) {
+		// Klavyeden girlen bir sayının kaç basamaklı olduğunu hesaplayan programı yazınız.
+		int sayi,x=1,y=1;
+		Scanner giris = new Scanner(System.in);
+		System.out.println("Sayıyı Giriniz: ");
+		sayi = giris.nextInt();
+		while (sayi/x>9)
+		{  
+		  x=x*10;  
+		  y++;        
+		}  
+		   System.out.println(y+" Basamaklıdır");        
+
+	}
+
+}
