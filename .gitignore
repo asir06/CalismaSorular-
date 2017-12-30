@@ -1,22 +1,19 @@
-# Compiled class file
-*.class
+package CalısmaSoruları;
+import java.util.*;
+public class Soru1 {
 
-# Log file
-*.log
+	public static void main(String[] args) {
+		// Klavyeden 15 sayısı girilene kadar sayıları toplayıp sonucu ekrana yazan programı yazınız.
+		int toplam=0;
+		int sayi=0;
+		while(sayi!=15)
+		{
+			Scanner giris=new Scanner(System.in);
+			sayi=giris.nextInt();
+			toplam=toplam+sayi;
+		}
+		System.out.println("Toplamları ==> "+toplam);
 
-# BlueJ files
-*.ctxt
+	}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
