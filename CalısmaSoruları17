@@ -1,0 +1,51 @@
+package CalısmaSoruları;
+public class Soru17 {
+	public static void main(String[] args) {
+		//int türden bir dizinin küçükten büyüğe göre sıralı olup olmadığını sınayan programı yazınız.
+		int dizi[]= {1,3,4,1,18};
+		int kontrol[]=new int[5];
+		for(int a=0;a<5;a++)
+		{
+			kontrol[a]=dizi[a];
+		}
+			
+				
+		for(int i=0; i<5; i++)
+		{
+			for(int j=i+1; j<5; j++)
+			{
+				if(dizi[i]>dizi[j])
+				{
+					int temp=dizi[j];
+					dizi[j]=dizi[i];
+					dizi[i]=temp;
+				}
+			}
+		}
+		if(dizi[0]==kontrol[0]&&dizi[1]==kontrol[1]&&dizi[2]==kontrol[2]&&dizi[3]==kontrol[3]&&dizi[4]==kontrol[4])
+		{
+			System.out.println("Dizi Küçükten Büyüge Sıralanmıstır");
+		}
+		else
+		{
+			System.out.println("Dizi Küçükten Büyüge Sıralanmamıstır");
+		}
+		//veya
+		int sayi=0;
+		for(int x=0;x<5;x++)
+		{
+			if(dizi[x]==kontrol[x])
+			{
+				sayi++;
+			}
+		}
+		if(sayi==5)
+		{
+			System.out.println("Dizi Küçükten Büyüge Sıralanmıştır");
+		}
+		else
+		{
+			System.out.println("Dizi Küçükten Büyüge Sıralanmamıstır");
+		}
+	}
+}
