@@ -1,0 +1,19 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru9 {
+
+	public static void main(String[] args) {
+		//Klavyeden girilen sayının tek mi çift mi olduğunu belirten programı yazınız.
+		Scanner giris=new Scanner(System.in);
+		System.out.println("Bir Sayı Giriniz ==> ");
+		int sayi=giris.nextInt();
+		if(sayi%2==0)
+		{
+			System.out.println("Girilen Sayi Çifttir ==> "+sayi);
+		}
+		else
+			System.out.println("Girilen Sayı Tektir ==> "+sayi);
+
+	}
+
+}
