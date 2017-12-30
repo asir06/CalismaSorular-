@@ -1,0 +1,47 @@
+package CalısmaSoruları;
+import java.util.*;
+import java.util.Random;
+public class Soru22 {
+
+	public static void main(String[] args) {
+		//1 ile 100 arasında rastgele türetilen bir sayıyı klavyeden 10 tahmin etme hakkıyla bulmasını sağlayan 
+		//programı yazınız. Girilen değere göre kullanıcı bilgilendirilmeli. 
+		Random rndm=new Random();
+		double tutulan=rndm.nextInt(100);
+		int hak=1;
+		while(hak<=10)
+		{
+			Scanner klavye=new Scanner(System.in);
+			System.out.println("Bir Sayı Giriniz :");
+			double girilen=klavye.nextDouble();
+			int x=100;
+			if(girilen>x) 
+			{ 
+				System.out.println("Girdiğiniz Sayı 100'den Büyük Olmalıdır :");
+			}
+			else if(girilen>tutulan)
+			{
+				System.out.println("Girdiğini Sayı Tutulan Sayıdan Büyüktür :");
+				hak++;
+			}
+			else if(girilen<tutulan)
+			{
+				System.out.println("Girdiğiniz Sayı Tutulan Sayıdan Küçüktür");
+			}
+			else if(girilen==tutulan)
+			{
+				System.out.println("Tebrikler Sayıyı Buldunuz :");
+				System.out.println("Rastgele Sınavı "+tutulan);
+				break;
+			}
+			if(hak==10) 
+			{
+				System.out.println("Hakkınız Bitmiştir Tekrar Deneyiniz...");
+				break;
+			}
+			
+		}
+
+	} 
+
+}
