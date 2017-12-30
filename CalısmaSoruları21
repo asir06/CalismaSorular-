@@ -1,0 +1,18 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru21 {
+
+	public static void main(String[] args) {
+		// Klavyeden girilen sayının faktöriyel değerini hesaplayan programı yazınız.
+		Scanner giris=new Scanner(System.in);
+		int sayi,faktoriyel=1;
+		System.out.println("Bir Sayı Giriniz ==> ");
+		sayi=giris.nextInt();
+		for(int i=2; i<=sayi; i++)
+		{
+			faktoriyel=i*faktoriyel;
+		}
+		System.out.println(sayi+" Sayısının Faktöriyeli ==> "+faktoriyel);
+	}
+
+}
