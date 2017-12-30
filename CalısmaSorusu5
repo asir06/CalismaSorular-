@@ -1,0 +1,19 @@
+package CalısmaSoruları;
+import java.util.Scanner;
+public class Soru5 {
+
+		public static void main(String[] args) {
+		//Klavyeden girilen bir ifadeyi istenen sayı kadar ekrana yazan programı yazınız.	
+		System.out.println("Kac Kez Yazılsın ==> ");
+		Scanner kackez=new Scanner(System.in);
+		int adet=kackez.nextInt();
+		System.out.println("Ne Yazılsın ==> ");
+		Scanner giris=new Scanner(System.in);
+		String ifade=giris.nextLine();
+		for(int i=0; i<adet; i++)
+		{ 
+			System.out.println(ifade);
+		}
+	}
+
+}
