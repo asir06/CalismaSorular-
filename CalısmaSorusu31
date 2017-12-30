@@ -1,0 +1,33 @@
+package CalısmaSoruları;
+import javax.swing.JOptionPane;
+public class Soru31 {
+
+	public static void main(String[] args) {
+		//Klavyeden girilen 10 sayıdan en büyüğünü ve en küçüğünü bulan programı yazınız.
+		int dizi[] = new int[10]; 
+        for(int i=0; i<dizi.length; i++) 
+        {
+            dizi[i] = Integer.valueOf(JOptionPane.showInputDialog("Bir Sayı Girin" + (i+1)));
+            System.out.print(dizi[i] + " ");
+        }
+        int max = dizi[0];
+        int min = dizi[0];
+        for(int i=0; i<dizi.length; i++)
+        	{
+            if(max < dizi[i])
+            {
+                max = dizi[i];
+            }
+             
+            if(min > dizi[i])
+            {
+                min = dizi[i];
+            }
+        }
+        System.out.println();
+        System.out.println("En büyük sayı: " + max);
+        System.out.println("En küçük sayı: " + min);
+
+	}
+
+}
