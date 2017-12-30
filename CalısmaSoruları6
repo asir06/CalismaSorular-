@@ -1,0 +1,21 @@
+package CalısmaSoruları;
+
+public class Soru6 {
+
+	public static void main(String[] args) {
+		//1’den 1000’e kadar olan sayılar içerisinde 5’e tam bölunebilen aynı zamanda 7’ye tam bölünemeyen 
+		//sayıları sayan, toplamlarını hesaplayan ve bu sayıları listeleyen bir program yazınız.
+		int toplam=0;
+		for(int i=1; i<1000; i++)
+		{
+			if(i%5==0 && i%7==1)
+			{
+				System.out.print(" "+i);
+				toplam=toplam+i;
+			}
+		}
+		System.out.println();
+		System.out.println("Sayıların Toplamı "+toplam);
+	}
+
+}
