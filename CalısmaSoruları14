@@ -1,0 +1,22 @@
+package CalısmaSoruları;
+public class Soru14 {
+	public static void main(String[] args) {
+		//1 ile 100 arasındaki sayıların pozitif tam bölenlerini bulan programı yazınız.
+		int bol,bolum;
+    	for(int i=1; i<=100;i++)
+    	{
+    		System.out.print(i+"==>");
+    		for(bol = 1; bol<=i; bol++){
+    		bolum=i % bol;
+    		
+    		if(bolum==0){
+       			System.out.print(bol+" ");
+    			
+    		}
+    		
+    	}
+    	System.out.println();
+	}
+
+}
+}
