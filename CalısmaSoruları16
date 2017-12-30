@@ -1,0 +1,17 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru16 {
+
+	public static void main(String[] args) {
+		//Klavyeden girilen metni kelime kelime parçalayan programı yazınız.
+		Scanner giris=new Scanner(System.in);
+		System.out.println("Metin Giriniz ==> ");
+		String metin=giris.nextLine();
+		String ayirma=" ";
+		StringTokenizer ayir=new StringTokenizer(metin,ayirma);
+		while(ayir.hasMoreTokens()){
+			System.out.println(ayir.nextToken());
+	}
+
+}
+}
