@@ -1,0 +1,16 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru11 {
+
+	public static void main(String[] args) {
+		// Girilen cümledeki küçük harfleri büyük harfe dönüştüren programı yazınız.
+		System.out.println("Cümle Giriniz ==>");
+		Scanner giris=new Scanner(System.in);
+		String cumle=giris.nextLine();
+		System.out.println("Girilen Cümle ==> "+cumle);
+		String buyukcumle=cumle.toUpperCase();
+		System.out.println("Büyük Harflerle Cümle ==> "+buyukcumle);
+
+	}
+
+}
