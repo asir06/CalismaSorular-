@@ -1,0 +1,25 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru8 {
+
+	public static void main(String[] args) {
+		//Klavyeden girilen üç basamaklı sayının rakamları çarpımının, rakamları toplamına bölümünden kalanı bulan programı yazınız.
+    
+		Scanner giris=new Scanner(System.in);
+		System.out.println("Üç Basamaklı Bir Sayı Giriniz ==> ");
+		int sayi=giris.nextInt();
+		int sonrakam=sayi%10;
+		int ikirakamacevir=sayi/10;
+		int ortancarakam=ikirakamacevir%10;
+		int tekrakamacevir=ikirakamacevir/10;
+		int ilkrakam=tekrakamacevir%10;
+		int toplam=sonrakam+ortancarakam+ilkrakam;
+		int carpım=sonrakam*ortancarakam*ilkrakam;
+		int sonuc=carpım/toplam;
+		System.out.println("Rakamların Çarpımı ==> "+ilkrakam+" * "+ortancarakam+" * "+sonrakam+" = "+carpım);
+		System.out.println("Rakamların Toplamı ==>"+ilkrakam+" + "+ortancarakam+" + "+sonrakam+" = "+toplam);
+		System.out.println("Sonuç ===>"+carpım+" / "+toplam+" = "+sonuc);
+
+	}
+
+}
