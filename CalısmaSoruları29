@@ -1,0 +1,45 @@
+package CalısmaSoruları;
+import java.util.*;
+public class Soru29 {
+
+	public static void main(String[] args) {
+		//Klavyeden alınan int türden üç sayı arasındaki 
+		//büyüklük - küçüklük ilişkisini küçükten büyüğe doğru < ve = simgeleriyle gösteren programı yazınız.
+		int dizi[]=new int[3];
+		for(int i=0;i<=2;i++)
+		{	
+			System.out.print((i+1)+". Sayıyı Giriniz ==> ");
+			Scanner giris=new Scanner(System.in);
+			dizi[i]=giris.nextInt();
+		}
+		for(int i=0; i<3; i++)
+		{
+			for(int j=i+1; j<3; j++)
+			{
+				if(dizi[i]>dizi[j])
+				{
+					int temp=dizi[j];
+					dizi[j]=dizi[i];
+					dizi[i]=temp;
+				}
+			}
+		}
+		
+		if(dizi[0]!=dizi[1]&&dizi[1]!=dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"<"+dizi[2]);
+		}
+		else if(dizi[0]==dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"="+dizi[2]);
+		}
+		else if(dizi[0]!=dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"="+dizi[2]);
+		}
+		else 
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"<"+dizi[2]);
+		}
+	}
+	}
